@@ -8,38 +8,32 @@
 // spaghetticode
 
 
-function solution(s){
-  var answer = true;
-  
+function solution(s) {
+
   s = s.toUpperCase();
-  
+
   let num = 0;
-  for(let i = 0; i < s.length; i++){
+  for (let i = 0; i < s.length; i++) {
     if (s[i] === 'P') {
-      num++; 
+      num++;
     }
     if (s[i] === 'Y') {
       num--;
     }
   }
-    result = (num === 0);
-    
-    return result;
+  result = (num === 0);
 
-  // [실행] 버튼을 누르면 출력 값을 볼 수 있습니다.
-  return answer;
+  return result;
+
 }
 // 위가 예제로 주어진 풀이
 
-function solution(s){
-  var answer = true;
+function solution(s) {
 
-const p = s.replace(/[^p]/gi,'').length;
-const y = s.replace(/[^y]/gi,'').length;
-return p === y;
+  const p = s.replace(/[^p]/gi, '').length;
+  const y = s.replace(/[^y]/gi, '').length;
+  return p === y;
 
-  // [실행] 버튼을 누르면 출력 값을 볼 수 있습니다.
-  return answer;
 }
 
 //내가 생각했던 예제를 고민했는데 마침 이러한 풀이를 하는 사람도 있었다.
